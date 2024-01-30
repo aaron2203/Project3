@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Regular.woff2);
+}
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(Gilroy-Light.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#nav1{
+height:10%;
+width:100%;
+padding: 1.5vw 3vw 1vw 3vw;
+/* background-color: brown; */
+display: flex;
+justify-content: space-between;
+}
+#nav1-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3vw;
+}
+#nav1-right span{
+    margin-left: 1vw;
+    color: rgb(77, 76, 75);
+}
+#nav1-right h4{
+    font-size: 1.7vh;
+    font-weight: 600;
+}
+#nav1-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.2vw;
+}
+#blackcircle1,#blackcircle2{
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+#nav2{
+    height:10%;
+    width:100%;
+    padding: 1vw 3vw 1vw 3vw;
+    /* background-color: aquamarine; */
+    display: flex;
+    gap:5.5vw;
+}
+#nav2 h3{
+    font-size: 1.8vh;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+#content{
+    height:80%;
+    width:100%;
+}
+#text-content{
+    height:40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding:8vh 10vw 4vh 10vh ;
+    gap: 35vw;
+    overflow-x: auto;
+    /* background-color:aquamarine; */
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height:1vh;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width:50%;
+    /* background-color: brown; */
+}
+.elem h1{
+    margin-left: 2vw;
+    font-family: Gilroy-Light;
+    font-size: 8vw;
+    font-weight: 100;
+}
+#text-superscript{
+    display: flex;
+    gap:3vw;
+}
+#image-content{
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
