@@ -41,6 +41,10 @@ justify-content: space-between;
     font-size: 1.7vh;
     font-weight: 600;
 }
+#nav1-right h4:hover{
+    cursor: pointer;
+    border-bottom: 2px solid orangered;
+}
 #nav1-left{
     display: flex;
     justify-content: center;
@@ -67,6 +71,10 @@ justify-content: space-between;
     font-weight: 600;
     text-transform:uppercase;
 }
+#nav2 h3:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
 #content{
     height:80vh;
     width:100%;
@@ -91,11 +99,14 @@ justify-content: space-between;
 .elem{
     flex-shrink: 0;
     height: 100%;
-    width:50%;
+    width:fit-content;
     /* background-color: brown; */
 }
+.elem:hover{
+    cursor: pointer;
+}
 .elem h1{
-    margin-left: 2vw;
+    margin-left: 1.8vw;
     font-family: Gilroy-Light;
     font-size: 9vw;
     font-weight: 100;
@@ -110,6 +121,10 @@ justify-content: space-between;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    scroll-snap-type: x mandatory ;
+}
+#image-content img:hover{
+    cursor: pointer;
 }
 #image-content::-webkit-scrollbar{
     display: none;
@@ -119,6 +134,7 @@ justify-content: space-between;
     width: 100%;
     object-fit: cover;
     flex-shrink: 0;
+    scroll-snap-align:center;
 }
 @media (max-width:600px){
     #nav1{
@@ -136,6 +152,7 @@ justify-content: space-between;
         }
         #nav1 h5{
             display: initial;
+            cursor: pointer;
         }
         #nav1-right span{
             margin-left: 1vw;
@@ -149,6 +166,10 @@ justify-content: space-between;
             display: none;
             font-size: 1.7vh;
             font-weight: 600;
+        }
+        #nav1-right h4:hover{
+            cursor: pointer;
+            border-bottom: 2px solid orangered;
         }
         #nav1-left{
             display: flex;
@@ -177,6 +198,10 @@ justify-content: space-between;
             font-weight: 600;
             text-transform:uppercase;
         }
+        #nav2 h3:hover{
+            cursor: pointer;
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
         #content{
             height:84vh;
             width:100%;
@@ -201,7 +226,7 @@ justify-content: space-between;
         .elem{
             flex-shrink: 0;
             height: 100%;
-            width:60%;
+            width:fit-content;
             /* background-color: brown; */
         }
         .elem h1{
