@@ -121,7 +121,6 @@ justify-content: space-between;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scroll-snap-type: x mandatory ;
 }
 #image-content img:hover{
     cursor: pointer;
@@ -134,7 +133,6 @@ justify-content: space-between;
     width: 100%;
     object-fit: cover;
     flex-shrink: 0;
-    scroll-snap-align:center;
 }
 @media (max-width:600px){
     #nav1{
